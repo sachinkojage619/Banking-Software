@@ -21,27 +21,26 @@
             font-weight: bolder;
             margin-top: 2px;
         }
-        p{
-    /* ... other styles ... */
-    margin-bottom:0;
-    margin-top:5px; /* <--- THIS IS THE CULPRIT! */
-
-            /* font-style:italic;
-            color: darkred;
-            font-weight: bold;
-            text-decoration:underline;
-            margin-bottom:0;
-           margin-top:150px; */    
-        }
-        .footer-note {
+      p{
         font-style:italic;
-        color: black; /* Changed from darkred/black for better visibility */
+        color: darkred;
         font-weight: bold;
-        text-decoration: none; /* Removed underline from the p tag itself */
-        margin-bottom: 0;
-        margin-top: 20px; /* Reduced the top margin to bring it closer to the image */
-        font-size:14px;
+        text-decoration:underline;
+        margin-bottom:0;
+        /* SET A SMALL MARGIN for the Bank URL lines */
+        margin-top: 5px; 
+    }
+
+    /* REPLACED: Use this specific class for the bottom note to remove the gap */
+    .footer-note {
         text-align: center;
+        color: black; 
+        font-weight: normal; /* Make sure it's not bold */
+        text-decoration: none; /* Make sure it's not underlined */
+        font-style: normal; /* Make sure it's not italic */
+        font-size: 14px;
+        margin-top: 10px; /* THIS IS THE SMALL GAP you want under the image */
+        margin-bottom: 0;
     }
         h3{
             color: brown;
@@ -150,6 +149,7 @@
 
 
 </html>
+
 
 
 
