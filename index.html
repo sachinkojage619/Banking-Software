@@ -32,14 +32,17 @@
     }
 
     /* REPLACED: Use this specific class for the bottom note to remove the gap */
-    .footer-note {
+   .footer-note {
         text-align: center;
-        color: black; 
-        font-weight: normal; /* Make sure it's not bold */
-        text-decoration: none; /* Make sure it's not underlined */
-        font-style: normal; /* Make sure it's not italic */
+        
+        /* You mentioned keeping the color, but overriding the other styles for cleanliness: */
+        font-weight: normal !important; 
+        text-decoration: none !important; 
+        font-style: normal !important; 
+        
         font-size: 14px;
-        margin-top: 10px; /* THIS IS THE SMALL GAP you want under the image */
+        /* SET THIS TO 0 TO REMOVE THE GAP */
+        margin-top: 0px !important; 
         margin-bottom: 0;
     }
         h3{
@@ -149,6 +152,7 @@
 
 
 </html>
+
 
 
 
